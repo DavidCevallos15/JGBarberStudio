@@ -3,12 +3,15 @@ node_modules/
 .pnp
 .pnp.js
 .yarn/install-state.gz
+.yarn/cache/
+.npm/
 
 # ─── Build / Salida de producción ─────────────────────────────────────────────
 dist/
 dist-ssr/
 build/
 out/
+.output/
 
 # ─── Variables de entorno y secretos (NUNCA subir al repo) ────────────────────
 .env
@@ -19,15 +22,24 @@ out/
 .env.test.local
 .env.production
 .env.production.local
+.env.*.local
+
+# ─── Vercel ───────────────────────────────────────────────────────────────────
+.vercel/
+.vercel
 
 # ─── Caché de Vite y herramientas ─────────────────────────────────────────────
 .vite/
 .vite-cache/
 vite.config.ts.timestamp-*
+vite.config.js.timestamp-*
 
 # ─── TypeScript ───────────────────────────────────────────────────────────────
 *.tsbuildinfo
 tsconfig.tsbuildinfo
+
+# ─── TailwindCSS ──────────────────────────────────────────────────────────────
+.tailwind-cache/
 
 # ─── Logs ─────────────────────────────────────────────────────────────────────
 *.log
@@ -36,6 +48,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+*.log.*
 
 # ─── Sistema operativo ────────────────────────────────────────────────────────
 .DS_Store
@@ -46,6 +59,7 @@ lerna-debug.log*
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+$RECYCLE.BIN/
 
 # ─── Editores e IDEs ──────────────────────────────────────────────────────────
 .vscode/
@@ -56,6 +70,9 @@ Desktop.ini
 *.njsproj
 *.sln
 *.sw?
+*.swp
+*.swo
+*.orig
 
 # ─── Herramientas de agentes / IA (uso interno, no sube al repo) ──────────────
 .agents/
@@ -72,9 +89,13 @@ coverage/
 .nyc_output/
 playwright-report/
 test-results/
+*.test.snap
 
 # ─── Misceláneos ──────────────────────────────────────────────────────────────
 *.local
 *.bak
 *.tmp
 .cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
