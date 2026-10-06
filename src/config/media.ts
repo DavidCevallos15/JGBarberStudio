@@ -4,8 +4,8 @@
 // Las colecciones (galería, antes/después, equipo) tienen su src en src/data/.
 export const MEDIA = {
   brand: {
-    logo: '/media/brand/logo.png', // logo circular completo
-    mark: '/media/brand/jg-mark.png', // monograma "JG" (navbar y favicon)
+    logo: '', // sin imagen: el logo es un wordmark en texto (ver Footer)
+    mark: '', // sin imagen: el monograma es texto (ver Navbar)
     ogImage: '', // TODO: /media/brand/og-image.jpg (1200×630)
   },
   hero: {

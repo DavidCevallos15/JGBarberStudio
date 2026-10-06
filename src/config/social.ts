@@ -4,9 +4,9 @@ import { SITE } from './site.ts';
 export type SocialKey = 'instagram' | 'tiktok' | 'facebook' | 'googleMaps';
 
 export const SOCIAL: Readonly<Record<SocialKey, string>> = {
-  instagram: 'https://www.instagram.com/jg_barberestudio/',
+  instagram: 'https://www.instagram.com/barberstudio.demo/',
   tiktok: '', // TODO: link de TikTok si existe
-  facebook: 'https://www.facebook.com/profile.php?id=61587892845054',
+  facebook: '', // sin link: el ícono no se muestra
   googleMaps: SITE.maps.url,
 };
 
@@ -17,7 +17,7 @@ export const SOCIAL_LABELS: Record<SocialKey, string> = {
   googleMaps: 'Google Maps',
 };
 
-export const INSTAGRAM_HANDLE = '@jg_barberestudio';
+export const INSTAGRAM_HANDLE = '@barberstudio.demo';
 
 /** Redes con link, en el orden en que se muestran */
 export const ACTIVE_SOCIALS = (Object.keys(SOCIAL) as SocialKey[])

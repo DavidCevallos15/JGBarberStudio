@@ -1,7 +1,7 @@
 // ─── WHATSAPP ────────────────────────────────────────────────
 // enabled: false oculta el botón flotante y todos los CTA de WhatsApp
 // phone: formato internacional, sin "+", sin espacios (ej. '5939XXXXXXXX')
-// Número tomado del perfil público de Google Maps (098 258 4290).
+// Número ficticio de ejemplo (demo de portafolio).
 interface WhatsAppConfig {
   readonly enabled: boolean;
   readonly phone: string;
@@ -10,12 +10,12 @@ interface WhatsAppConfig {
 
 export const WHATSAPP: WhatsAppConfig = {
   enabled: true,
-  phone: '593982584290', // TODO: confirmar que este número tiene WhatsApp
-  defaultMessage: 'Hola, quiero reservar un turno en JG Barber Estudio.',
+  phone: '593990000000', // placeholder: [+593 99 000 0000]
+  defaultMessage: 'Hola, quiero reservar un turno en [BARBER STUDIO].',
 };
 
 // Teléfono para llamadas (se muestra en Ubicación y en el JSON-LD)
 export const PHONE: { readonly display: string; readonly tel: string } = {
-  display: '098 258 4290',
-  tel: '+593982584290',
+  display: '[+593 99 000 0000]',
+  tel: '+593990000000',
 };

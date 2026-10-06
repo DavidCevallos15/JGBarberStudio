@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Menu } from 'lucide-react';
 import { useMotionValueEvent, useScroll } from 'motion/react';
-import { MEDIA } from '../../config/media';
 import { SITE } from '../../config/site';
 import { NAV_LINKS } from '../../data/navigation';
 import { cn } from '../../lib/cn';
@@ -25,7 +24,9 @@ export function Navbar() {
     >
       <nav aria-label="Principal" className="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-6 px-4 sm:px-6 md:h-20 lg:px-10">
         <a href="#hero" className="flex items-center gap-3" aria-label={`${SITE.name}, ir al inicio`}>
-          <img src={MEDIA.brand.mark} alt="" width={40} height={40} className="size-10 rounded-full ring-1 ring-cream/20" />
+          <span aria-hidden className="grid size-10 shrink-0 place-items-center rounded-full bg-ink font-display text-xl uppercase leading-none tracking-wide ring-1 ring-cream/20">
+            BS
+          </span>
           <span className="hidden whitespace-nowrap font-display min-[400px]:inline text-2xl uppercase leading-none tracking-wide">{SITE.name}</span>
         </a>
 

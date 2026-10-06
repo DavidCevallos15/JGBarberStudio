@@ -25,7 +25,7 @@ export function Hero() {
           type="video"
           src={MEDIA.hero.video}
           poster={MEDIA.hero.poster}
-          alt="Barbero trabajando en JG Barber Estudio"
+          alt={`Barbero trabajando en ${SITE.name}`}
           expectedPath="/media/hero/hero-bg.mp4"
           className="text-cream"
         />

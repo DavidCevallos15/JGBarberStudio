@@ -1,4 +1,3 @@
-import { MEDIA } from '../../config/media';
 import { SITE } from '../../config/site';
 import { ACTIVE_SOCIALS } from '../../config/social';
 import { NAV_LINKS } from '../../data/navigation';
@@ -13,7 +12,9 @@ export function Footer() {
     <footer className="border-t border-cream/10 bg-ink text-cream">
       <Container className="grid gap-12 py-16 md:grid-cols-[auto_1fr_auto] md:gap-16 lg:py-24">
         <div className="flex flex-col items-start gap-6">
-          <img src={MEDIA.brand.logo} alt={SITE.fullName} width={160} height={160} loading="lazy" className="size-36 md:size-40" />
+          <div role="img" aria-label={SITE.fullName} className="grid size-36 place-items-center rounded-full bg-ink px-6 text-center ring-1 ring-cream/20 md:size-40">
+            <span className="font-display text-3xl uppercase leading-[0.9] tracking-wide">{SITE.name}</span>
+          </div>
           <p className="max-w-xs text-sm text-muted">
             {SITE.address.street}, {SITE.address.city}, {SITE.address.region}
           </p>

@@ -1,6 +1,6 @@
-# JG Barber Estudio: landing
+# [BARBER STUDIO]: landing
 
-Landing de una sola página para **JG Barber Estudio / Barber Shop** (Parque El Mamey, Portoviejo).
+Landing de una sola página para **[BARBER STUDIO] / Barber Shop** (Portoviejo, Manabí). Proyecto de portafolio con datos ficticios.
 React 18 + Vite + TypeScript + Tailwind CSS v4 + Motion. Sin backend: las reservas se envían por WhatsApp.
 
 ## Comandos (Windows / PowerShell o bash)
@@ -26,7 +26,7 @@ npm run preview    # sirve /dist para probar el build
 | Dirección, mapa y coordenadas | `src/config/site.ts` → `address`, `geo`, `maps` | |
 | Horario | `src/config/site.ts` → `HOURS` | `''` = "Por confirmar", `'closed'` = "Cerrado" |
 | Instagram, TikTok, Facebook, Google Maps | `src/config/social.ts` | Si un link queda vacío, su ícono no aparece |
-| Dominio (SEO, canonical, OG) | `src/config/site.ts` → `url` | Ej. `'https://jgbarberestudio.com'` sin `/` final |
+| Dominio (SEO, canonical, OG) | `src/config/site.ts` → `url` | Ej. `'https://tudominio.com'` sin `/` final |
 | Imagen al compartir (OG) | `src/config/media.ts` → `brand.ogImage` | 1200×630, requiere `url` |
 | Video o poster del hero | `src/config/media.ts` → `hero` | Sube a `public/media/hero/` |
 | Fotos de Nosotros, Servicios, FAQ y fachada | `src/config/media.ts` | |

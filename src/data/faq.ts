@@ -35,6 +35,6 @@ export const FAQ: FaqItem[] = [
   {
     question: '¿Dónde están ubicados?',
     answer:
-      'Estamos en el Parque Ecológico El Mamey, en Portoviejo. Más abajo tienes el mapa y el botón "Cómo llegar".',
+      'Estamos en [Portoviejo, Manabí]. Más abajo tienes la ubicación y el botón "Cómo llegar".',
   },
 ];

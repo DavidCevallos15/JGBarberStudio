@@ -49,7 +49,7 @@ export function About() {
 
         <div className="mt-20 grid items-center gap-12 md:mt-28 md:grid-cols-12 md:gap-8">
           <motion.div {...REVEAL} variants={fadeUp} className="md:col-span-5">
-            <MediaSlot src={MEDIA.about.main} alt="Interior de JG Barber Estudio" aspect="portrait" expectedPath="/media/about/main.jpg" />
+            <MediaSlot src={MEDIA.about.main} alt={`Interior de ${SITE.name}`} aspect="portrait" expectedPath="/media/about/main.jpg" />
           </motion.div>
 
           <motion.div {...REVEAL} variants={stagger(0.1)} className="flex flex-col gap-8 md:col-span-6 md:col-start-7">

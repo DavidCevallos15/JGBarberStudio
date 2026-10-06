@@ -64,13 +64,11 @@ export function Location() {
 
         <motion.div {...REVEAL} variants={stagger(0.12)} className="flex flex-col gap-4 lg:col-span-7">
           <motion.div variants={fadeUp} className="relative aspect-[4/3] overflow-hidden border border-line bg-ink/5 lg:aspect-[16/11]">
-            <iframe
-              title={`Mapa de ${SITE.name}`}
-              src={maps.embedUrl}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="absolute inset-0 size-full grayscale-[60%] contrast-[1.05]"
-            />
+            <div className="absolute inset-0 grid place-items-center">
+              <span className="font-display text-4xl uppercase tracking-wide text-ink/40 md:text-6xl">
+                [{address.city}, {address.region}]
+              </span>
+            </div>
           </motion.div>
           <motion.div variants={fadeUp}>
             <MediaSlot src={MEDIA.location.storefront} alt={`Fachada de ${SITE.name}`} aspect="wide" expectedPath="/media/location/storefront.jpg" />

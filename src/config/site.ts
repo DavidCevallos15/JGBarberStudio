@@ -1,8 +1,8 @@
 import type { OpeningHours } from '../types/index.ts';
 
 // ─── DATOS GENERALES DEL NEGOCIO ─────────────────────────────
-// Fuente de dirección, teléfono y horario: perfil público de Google Maps (05-10-2026).
-// Google mostró solo el horario del lunes; el resto queda por confirmar.
+// Datos ficticios de ejemplo (demo de portafolio): nombre, dirección y contacto son placeholders.
+// Solo el horario del lunes está definido; el resto queda por confirmar.
 
 const HOURS: readonly OpeningHours[] = [
   { day: 'Lunes', code: 'Mo', open: '09:00', close: '18:00' },
@@ -15,29 +15,30 @@ const HOURS: readonly OpeningHours[] = [
 ];
 
 export const SITE = {
-  name: 'JG Barber Estudio',
-  fullName: 'JG Barber Estudio / Barber Shop',
+  name: '[BARBER STUDIO]',
+  fullName: '[BARBER STUDIO] / Barber Shop',
   description:
-    'JG Barber Estudio, barbería en Portoviejo (Manabí). Cortes, fades y perfilado de barba. Reserva tu turno por WhatsApp.',
+    '[BARBER STUDIO], barbería en Portoviejo (Manabí). Cortes, fades y perfilado de barba. Reserva tu turno por WhatsApp.',
 
-  // Dominio final sin "/" al final (ej. 'https://jgbarberestudio.com').
+  // Dominio final sin "/" al final (ej. 'https://tudominio.com').
   // Vacío = no se generan canonical, og:url ni og:image absolutos.
   url: '' as string, // TODO: dominio cuando se haga deploy en Vercel
   locale: 'es_EC',
   lang: 'es',
 
   address: {
-    street: 'Parque Ecológico El Mamey',
+    street: '[Dirección de ejemplo]',
     city: 'Portoviejo',
     region: 'Manabí',
-    postalCode: '130105',
+    postalCode: '',
     country: 'EC',
-    reference: 'Dentro del Parque Mamey',
+    reference: '[Referencia]',
   },
-  geo: { lat: -1.063504, lng: -80.4543797 },
+  // Coordenadas aproximadas del centro de la ciudad (no corresponden a ningún local).
+  geo: { lat: -1.0546, lng: -80.4545 },
   maps: {
-    url: 'https://maps.app.goo.gl/9NH6s78j3QNGWQkB9',
-    embedUrl: 'https://maps.google.com/maps?q=-1.063504,-80.4543797&z=17&output=embed',
+    // Búsqueda genérica de la ciudad, sin apuntar a ningún negocio.
+    url: 'https://www.google.com/maps/search/?api=1&query=Portoviejo%2C%20Manab%C3%AD',
   },
   rating: { value: 5, source: 'Google' },
   hours: HOURS,
@@ -50,12 +51,12 @@ export const SITE = {
       'Barbería de estudio en Portoviejo. Fades precisos, barbas definidas y el tiempo que tu corte necesita.',
     cta: 'Reservar turno',
     secondaryCta: 'Ver servicios',
-    badge: 'Reserva ahora • JG Barber Estudio • ',
+    badge: 'Reserva ahora • [BARBER STUDIO] • ',
   },
   about: {
     label: 'Nuestra filosofía',
     manifesto: ['Cada corte', 'es oficio,', 'no trámite.'],
-    body: 'En JG Barber Estudio te escuchamos antes de tomar la máquina. Trabajamos sin apuros, cuidando cada línea para que salgas con un corte que se adapte a tu estilo y a tu día a día.',
+    body: 'En [BARBER STUDIO] te escuchamos antes de tomar la máquina. Trabajamos sin apuros, cuidando cada línea para que salgas con un corte que se adapte a tu estilo y a tu día a día.',
     cta: 'Reserva tu silla',
   },
   booking: {
@@ -64,11 +65,11 @@ export const SITE = {
     intro:
       'Completa los datos y te abrimos WhatsApp con el mensaje listo. La disponibilidad se confirma por chat.',
     submit: 'Enviar por WhatsApp',
-    badge: 'Reserva ahora • JG Barber Estudio • ',
+    badge: 'Reserva ahora • [BARBER STUDIO] • ',
   },
   location: {
     label: 'Ubicación',
-    title: ['Te esperamos', 'en El Mamey'],
+    title: ['Te esperamos', 'en Portoviejo'],
     directions: 'Cómo llegar',
   },
 } as const;
